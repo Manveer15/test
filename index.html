@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hey Manveer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manveer Kushwaha | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #2c3e50;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #2ecc71;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #1a1a2e;
+      color: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .socials {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .socials a {
+      margin: 0 1rem;
+      color: #2c3e50;
+      font-size: 2rem;
+      transition: color 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: #2ecc71;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
-    <!-- Google tag (gtag.js) -->
+ <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6XKY89RPR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -14,7 +110,141 @@
 
   gtag('config', 'G-E6XKY89RPR');
 </script>
+
 <body>
-    <h1>Hey Manveer this side</h1>
+  <header>
+    <h1>Manveer Kushwaha</h1>
+    <p> B.Tech CSE (Data Science)</p>
+  </header>
+
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>C</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Frameworks & Tools</h3>
+        <ul>
+          <li>Pandas, NumPy, Seaborn</li>
+          <li>Tableau, Excel</li>
+          <li>Matplotlib, tensorFlow</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Coursework</h3>
+        <ul>
+          <li>Data Analysis</li>
+          <li>DSA, OOPs</li>
+          <li>Machine Learning</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>IDE</h3>
+        <ul>
+          <li>VS Code</li>
+          <li>PyCharm</li>
+          <li>Eclipse</li>
+          <li>IntelliJ IDEA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Web Development Intern</h3>
+        <p>HOBBIT | MAY - JULY 2024</p>
+        <p>Built dynamic frontend of hotel named CHROME which is located in Greater noida.</p>
+      </div>
+      <div class="card">
+        <h3>Content Writing </h3>
+        <p>AI zone | FEB- PRESENT 2025 </p>
+        <p>In this intermship I create a AI generated Article of around 200 words.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>COVID-19 Vaccine Analysis</h3>
+        <p>Exploratory data analysis using Python and Tableau.</p>
+      </div>
+      <div class="card">
+        <h3>SMS Fraud Detection</h3>
+        <p>Built ML models to detect SMS frauds with 90% accuracy.</p>
+      </div>
+      <div class="card">
+        <h3>Web Traffic Forecasting</h3>
+        <p>Used time series forecasting for web traffic using CNN and LSTM with accuracy around 89 %.</p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Dog Breed Identifier </h3>
+      <p>In this mini project I create a Dog Breed Identifier Using CNN's Pre trained model MobileNet.</p>
+    </div>
+  </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>150+ DSA Problems Solved</h3>
+        <p>On platforms like LeetCode and Coding Ninja.</p>
+      </div>
+      <div class="card">
+        <h3>Smart India Hackathon 2023 & 2024</h3>
+        <p>Cleard the internal college rounds and secured the top 20 in college round </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Python Certification</h3>
+        <p>By Udemy </p>
+      </div>
+      <div class="card">
+        <h3>Java Certification</h3>
+        <p>By Oracle</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="socials">
+      <a href="mailto:manveerkush@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://leetcode.com/Manveer_06" target="_blank"><i class="fas fa-code"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Manveer Kushwaha | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
